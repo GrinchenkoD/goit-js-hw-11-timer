@@ -12,10 +12,11 @@ const minsRef = document.querySelector("[data-value='mins']");
 const secsRef = document.querySelector("[data-value='secs']");
 
 function start() {
+  const endTime = this.targetDate;
+  const startTime = Date.now();
+  changeTimer(endTime - startTime);
   setInterval(() => {
     const currentTime = Date.now();
-    const endTime = this.targetDate;
-
     const delta = endTime - currentTime;
     changeTimer(delta);
   }, 1000);
