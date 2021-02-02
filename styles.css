@@ -15,3 +15,8 @@
 .field:not(:last-child) {
   margin-right: 30px;
 }
+.value {
+  font-size: 50px;
+  display: block;
+  text-align: center;
+}
